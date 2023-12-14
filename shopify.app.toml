@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "auto-store-demo"
+client_id = "9b4be933baf70f21df0a170822cf3563"
+application_url = "https://cartridge-hands-gnome-video.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://cartridge-hands-gnome-video.trycloudflare.com/auth/callback",
+  "https://cartridge-hands-gnome-video.trycloudflare.com/auth/shopify/callback",
+  "https://cartridge-hands-gnome-video.trycloudflare.com/api/auth/callback",
+  "https://cartridge-hands-gnome-video.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "auto-store-demo.myshopify.com"
